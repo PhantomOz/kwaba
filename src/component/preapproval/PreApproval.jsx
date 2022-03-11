@@ -114,7 +114,7 @@ function PreApproval({rnt, srnt, plan, sPlan, handleRnt}) {
                 Monthly Payment:
               </p>
               <p className="PreApproval__body__receipt__list__detail">
-                {handleInterest(rnt)}`
+                {handleInterest(rnt)}
               </p>
             </div>
             <div className="PreApproval__body__receipt__list">
