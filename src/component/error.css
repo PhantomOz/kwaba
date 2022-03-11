@@ -1,0 +1,17 @@
+.Error{
+    width: 126px;
+    height: 55px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    border-radius: 8px;
+    background-color: rgb(228, 78, 78);
+    color: #FFFFFF;
+}
+.Error > p{
+    font-family: "BR Hendrix";
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}

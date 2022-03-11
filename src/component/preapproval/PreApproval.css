@@ -1,0 +1,152 @@
+.PreApproval>* {
+    font-family: "BR Hendrix";
+}
+
+.PreApproval {
+    max-width: 660px;
+    margin: auto;
+}
+
+.PreApproval__body__input {
+    margin: 20px 0;
+}
+
+.PreApproval__body__input__label {
+    margin-bottom: 7px;
+    color: #465969;
+    font-weight: 900;
+    font-family: "BR Hendrix Extra";
+    font-size: 13px;
+}
+
+.PreApproval__body__input__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 10px 20px 20px;
+    gap: 2px;
+    box-shadow: -5px 10px 20px #dddddd;
+}
+
+.PreApproval__body__input__txt>p {
+    font-size: 10px;
+    margin: 0;
+    color: #BFBFBF;
+}
+
+.PreApproval__body__input__txt>div {
+    display: flex;
+    align-items: center;
+}
+
+.PreApproval__body__input__txt>div>span>input {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: 600;
+    flex: 1;
+    transform: translateY(-1.5px);
+}
+
+.PreApproval__body__input__txt>div>span>img {
+    height: 13px;
+    object-fit: contain;
+}
+
+
+.PreApproval__body__input__txt>div>span>input::placeholder {
+    font-size: 13px;
+
+}
+
+
+
+.PreApproval__heading {
+    margin: 20px 6vw 0;
+    color: #465969;
+}
+
+.PreApproval__body {
+    margin: 80px 6vw;
+    padding: 0 20px;
+}
+
+.PreApproval__body>h3 {
+    color: #2C2F73;
+}
+
+.PreApproval__body__input__dropdown {
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    height: 55px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.PreApproval__body__input__dropdown>p {
+    font-size: 13px;
+    color: #BFBFBF;
+}
+
+.PreApproval__body__input__dropdown>div>img {
+    object-fit: contain;
+    width: 13px;
+}
+
+.PreApproval__body__input__dropdown>ul {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 25px;
+    left: 0;
+    border-radius: 8px;
+    box-shadow: -2px 10px 20px #d6d6d6;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+li {
+    font-size: 13px;
+    height: 35px;
+    border-bottom: 1px solid #F2F2F2;
+    display: inline-block;
+    padding-left: 20px;
+    color: #BFBFBF;
+    display: flex;
+    align-items: center;
+}
+
+.PreApproval__body__receipt {
+    background-color: #EDECFC;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.PreApproval__body__receipt__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #6F7D8D;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+
+.PreApproval__body__receipt__list__detail {
+    font-weight: 600;
+    color: #465969;
+}
+
+.PreApproval__button {
+    background-color: #29276A;
+    box-shadow: none;
+    margin: 40px 0;
+}

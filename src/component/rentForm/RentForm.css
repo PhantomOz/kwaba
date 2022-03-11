@@ -1,0 +1,183 @@
+.RentForm>* {
+    font-family: "BR Hendrix";
+}
+
+.RentForm {
+    max-width: 660px;
+    margin: auto;
+
+}
+
+.RentForm__heading {
+    margin: 20px 6vw 0;
+    color: #465969;
+}
+
+.RentForm__body {
+    margin: 0 6vw;
+    padding: 20px;
+}
+
+.RentForm__body__heading {
+    color: #29276A;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.RentForm__steps {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #BFBFBF;
+}
+
+.RentForm__steps>p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.RentForm__body__input {
+    margin: 20px 0;
+}
+
+.RentForm__body__input__label {
+    margin-bottom: 7px;
+    color: #465969;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.RentForm__body__input__select__option {
+    height: 55px;
+    width: 100%;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BFBFBF;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.RentForm__body__input__select__option:hover, .selected{
+    color: #8780e9;
+    border-color: #A3A0F2;
+    font-weight: 600;
+}
+
+.RentForm__body__input__text {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 0 20px;
+}
+
+.RentForm__body__input__text>img {
+    width: 13px;
+    object-fit: contain;
+    margin-top: -1px;
+    transition: all .9s ease-in-out;
+}
+
+.RentForm__body__input__text>input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 100%;
+    font-size: 13px;
+    flex: 1;
+    padding: 0 2px;
+    color: #BFBFBF;
+}
+
+.RentForm__body__input__text>input::placeholder {
+    color: #BFBFBF;
+    font-family: "BR Hendrix";
+    font-size: 13px;
+}
+
+.RentForm__body__input__dropdown {
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    height: 55px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.RentForm__body__input__dropdown>p {
+    font-size: 13px;
+    color: #BFBFBF;
+}
+
+.RentForm__body__input__dropdown>div>img {
+    object-fit: contain;
+    width: 13px;
+}
+
+.RentForm__body__input__dropdown>ul {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 25px;
+    left: 0;
+    border-radius: 8px;
+    box-shadow: -2px 10px 20px #d6d6d6;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+li {
+    font-size: 13px;
+    height: 35px;
+    border-bottom: 1px solid #F2F2F2;
+    display: inline-block;
+    padding-left: 20px;
+    color: #BFBFBF;
+    display: flex;
+    align-items: center;
+}
+
+
+
+button {
+    width: 100%;
+    height: 55px;
+    background-color: #25DC99;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: -5px 10px 15px #c4ffed;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+
+
+/* the steps  */
+
+.timer {
+    background: conic-gradient(#25D985 120deg, #BFBFBF 30deg);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mask {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
