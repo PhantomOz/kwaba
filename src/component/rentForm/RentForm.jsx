@@ -3,9 +3,10 @@ import "./RentForm.css";
 import dropdown from "../../down.png";
 import { useNavigate } from 'react-router-dom';
 
-function RentForm({rnt, srnt, sal, ssal, handleRnt, saccStatus, plan, sPlan}) {
+function RentForm({rnt, srnt, sal, ssal, handleRnt, accStatus, saccStatus, plan, sPlan}) {
     const [drop, setDrop] = useState(false);
     const navigate = useNavigate();
+    const [error, setError] = useState(false);
 
     const handleDropDown = () => {
         setDrop(!drop);
@@ -19,7 +20,17 @@ function RentForm({rnt, srnt, sal, ssal, handleRnt, saccStatus, plan, sPlan}) {
       sPlan(e.target.textContent.split(" ")[0]);
     }
     const handleFormat = () => {
-      navigate("/pre-approval");
+      if (
+        rnt.length === 0 ||
+        sal.length === 0 ||
+        accStatus.length === 0 ||
+        rnt === "₦" || sal === "₦"
+      ) {
+        setError(true);
+      } else {
+        setError(false);
+        navigate("/pre-approval");
+      }
     }
     
   return (
@@ -119,6 +130,7 @@ function RentForm({rnt, srnt, sal, ssal, handleRnt, saccStatus, plan, sPlan}) {
           </div>
         </div>
         <button type="button" onClick={handleFormat}>NEXT</button>
+        {error && <p className='error'>Please fill in all input</p>}
       </div>
     </div>
   );

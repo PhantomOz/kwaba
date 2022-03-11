@@ -181,3 +181,9 @@ button {
     border-radius: 50%;
     background-color: #FFFFFF;
 }
+
+.error{
+    text-align: center;
+    color: rgb(240, 69, 69);
+    transform: translateY(-20px);
+}

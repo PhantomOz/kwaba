@@ -5,6 +5,8 @@ import dropdown from "../../down.png";
 
 function PreApproval({rnt, srnt, plan, sPlan, handleRnt}) {
   const [drop, setDrop] = useState(false);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleDropDown = () => {
     setDrop(!drop);
@@ -30,6 +32,16 @@ function PreApproval({rnt, srnt, plan, sPlan, handleRnt}) {
     }
     return "₦" + new Intl.NumberFormat().format(ans);
   }
+
+  const handleSubmit = () => {
+    if(rnt.length === 0 || rnt === "₦"){
+      setError(true);
+      setSuccess(false);
+    }else{
+      setSuccess(true);
+      setError(false);
+    }
+  }
     return (
       <div className="PreApproval">
         <h1 className="PreApproval__heading">My Rent</h1>
@@ -42,7 +54,6 @@ function PreApproval({rnt, srnt, plan, sPlan, handleRnt}) {
             <div className="PreApproval__body__input__txt">
               <p>Amount</p>
               <div>
-                
                 <span>
                   <input
                     type="text"
@@ -103,8 +114,7 @@ function PreApproval({rnt, srnt, plan, sPlan, handleRnt}) {
                 Monthly Payment:
               </p>
               <p className="PreApproval__body__receipt__list__detail">
-                {handleInterest(rnt)}
-                `
+                {handleInterest(rnt)}`
               </p>
             </div>
             <div className="PreApproval__body__receipt__list">
@@ -114,9 +124,11 @@ function PreApproval({rnt, srnt, plan, sPlan, handleRnt}) {
               </p>
             </div>
           </div>
-          <button type="button" className="PreApproval__button">
+          <button type="button" className="PreApproval__button" onClick={handleSubmit}>
             ACCEPT
           </button>
+          {error && <p className="error">Please fill in all input</p>}
+          {success && <p className="success">Sucessfull submitted</p>}
         </div>
       </div>
     );

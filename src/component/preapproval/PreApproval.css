@@ -150,3 +150,15 @@ li {
     box-shadow: none;
     margin: 40px 0;
 }
+
+.error {
+    text-align: center;
+    color: rgb(240, 69, 69);
+    transform: translateY(-20px);
+}
+
+.success {
+    text-align: center;
+    color: rgb(88, 219, 88);
+    transform: translateY(-20px);
+}
